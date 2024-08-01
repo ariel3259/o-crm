@@ -8,7 +8,7 @@ services:
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
-      - ./addons:/mnt/extra-addons
+      - ./addons:/opt/odoo/addons
     environment:
       - HOST=db
       - USER=odoo_user
