@@ -10,6 +10,7 @@ services:
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
     environment:
+      - ADDONS_REPO=https://github.com/OCA/business-requirement.gits
       - HOST=db
       - USER=odoo_user
       - PASSWORD=${PG_PASSWORD}
